@@ -4,7 +4,9 @@
 # or whitespace (' ').
 
 class EmailAddressParser 
+  
   attr_accessor :emails 
+  
   def self.parse(csv_data)
    rows = csv_data.split("\n")
    people = rows.collect do |row|
