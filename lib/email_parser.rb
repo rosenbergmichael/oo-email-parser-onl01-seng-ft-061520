@@ -14,8 +14,6 @@ class EmailAddressParser
  
      person = self.new 
      person.name = name
-     person.age = age
-     person.company = company
      person
    end
    people
