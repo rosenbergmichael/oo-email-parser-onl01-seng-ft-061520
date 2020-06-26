@@ -9,7 +9,7 @@ class EmailAddressParser
   
   def self.parse(email_addresses)
    rows = email_addresses.split("\n")
-   people = rows.collect do |row|
+   email = rows.collect do |row|
      data = row.split(", ")
      emails = data[0]
     
