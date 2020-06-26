@@ -12,7 +12,7 @@ class EmailAddressParser
      emails = data[0]
     
  
-     person = self.new # This is an important line.
+     person = self.new 
      person.name = name
      person.age = age
      person.company = company
