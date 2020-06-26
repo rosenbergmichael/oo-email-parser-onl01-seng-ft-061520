@@ -7,19 +7,9 @@ class EmailAddressParser
   
   attr_accessor :emails 
   
-  def self.parse(email_addresses)
-   rows = email_addresses.split("\n")
-   email = rows.collect do |row|
-     data = row.split(", ")
-     emails = data[0]
-    
- 
-     email = self.new 
-     email.name = name
-     email 
-   end
-   email 
- end
+  def initialize(emails)
+    @emails = emails
+  end
   
   
   
